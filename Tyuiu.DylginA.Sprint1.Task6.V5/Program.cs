@@ -19,12 +19,12 @@ namespace Tyuiu.DylginA.Sprint1.Task6.V5
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:");
             Console.WriteLine("Введите текст:");
-            string value = Console.ReadLine();
+            string input = Console.ReadLine();
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.CheckSymmetricalWords(value));
+            Console.WriteLine(ds.CheckSymmetricalWords(input));
         }
     }
 }

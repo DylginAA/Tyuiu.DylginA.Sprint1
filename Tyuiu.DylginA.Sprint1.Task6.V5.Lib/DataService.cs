@@ -5,8 +5,16 @@ namespace Tyuiu.DylginA.Sprint1.Task6.V5.Lib
     {
         public string CheckSymmetricalWords(string value)
         {
-            foreach (var word in value.Split(' '))
-                if (word == new string(word.Reverse().ToArray()))Console.WriteLine(word);
+
+            foreach (string word in value.Split(' '))
+            {
+                string revers = new string(word.Reverse().ToArray());
+                if (word == revers)
+                {
+                    value = word;
+                    Console.WriteLine(word);
+                }
+            }
             return value;
         }
     }
